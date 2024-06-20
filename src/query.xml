@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queries>
+    <query id="selectAllUsers">
+        <![CDATA[
+            SELECT * FROM users;
+        ]]>
+    </query>
+    <query id="deleteUser">
+        <![CDATA[
+            DELETE
+
+        ]]>
+    </query>
+</queries>
