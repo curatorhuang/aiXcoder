@@ -1,7 +1,7 @@
 # main.py
 from classroom import Classroom
 
-# 创建班级对象ß
+# 创建班级对象
 classroom1 = Classroom("Class A", "Mr. Smith")
 
 # 添加学生到班级
