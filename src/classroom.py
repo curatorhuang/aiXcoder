@@ -1,21 +1,19 @@
-# classroom.py 文件内容（如果放在同一个文件中，请确保在 Student 类之后）
-
-from student import Student  # 如果在不同文件中，需要导入 Student 类
+# classroom.py
+from student import Student  # 导入Student类
 
 class Classroom:
-    def __init__(self, class_name):
+    def __init__(self, class_name, teacher_name, students=[]):
         self.class_name = class_name
-        self.students = []
+        self.teacher_name = teacher_name
+        self.students = students  # students是一个包含Student对象的列表
 
-    def add_student(self, student):
-        if isinstance(student, Student):
-            self.students.append(student)
-        else:
-            print("添加的不是学生对象")
+    def add_student(self, name, gender, age):
+        student = Student(name, gender, age)
+        self.students.append(student)
+
+    def num_students(self):
+        return len(self.students)
 
     def list_students(self):
         for student in self.students:
-            print(student)
-
-    def __str__(self):
-        return f"班级名称: {self.class_name}, 学生数量: {len(self.students)}"
+            print(f"Name: {student.name}, Gender: {student.gender}, Age: {student.age}")
