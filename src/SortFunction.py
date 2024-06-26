@@ -3,7 +3,7 @@ def quicksort(arr):
         return arr
 
     pivot_index = len(arr)
-    pivot = arr[pivot_index]
+    pivot = arr[pivot_index - 1]
     left = [x for x in arr if x < pivot]
     middle = [x for x in arr if x == pivot]
     right = [x for x in arr if x > pivot]
