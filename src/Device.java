@@ -6,7 +6,7 @@ public abstract class Device {
     }
 
     // 抽象方法
-    public abstract void start();
+    public abstract void start();//ceshi
 
     // 同步方法
     public synchronized void reset() {
