@@ -1,5 +1,5 @@
 def quicksort(arr):
-    if len(arr) <= 1
+    if len(arr) <= 1：
         return arr
     pivot = arr[0]
     less = [x for x in arr[1:] if x <= pivot]
