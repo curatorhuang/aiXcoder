@@ -1,15 +1,15 @@
 def quicksort(arr):
     if len(arr) <= 1:
         return arr
-    # 故意引入数组越界错误
-    pivot = arr[0]
-# ????????? pivot_index
+
+    pivot_index = len(arr)
+    pivot = arr[pivot_index]
     left = [x for x in arr if x < pivot]
     middle = [x for x in arr if x == pivot]
     right = [x for x in arr if x > pivot]
     return quicksort(left) + middle + quicksort(right)
 
-# ???????
+# 绀轰緥鏁扮粍
 arr = [3, 6, 8, 10, 1, 2, 1]
 try:
     sorted_arr = quicksort(arr)
