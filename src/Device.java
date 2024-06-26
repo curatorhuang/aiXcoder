@@ -13,14 +13,16 @@ public abstract class Device {
         System.out.println("Device is being reset.");
     }
 
+    protected void finalize() throws Throwable {
+        System.out.println("Cleaning up resources...");
+    }
+
     // 本地方法（假定有本地实现）
     public native void performOptimization();
 
     // 终结器方法
-    @Override
-    protected void finalize() throws Throwable {
-        System.out.println("Cleaning up resources...");
-    }
+    
+  
 }
 
 
