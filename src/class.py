@@ -12,7 +12,7 @@ class Classroom:
     def display_students(self):
         for student in self.students:
             print(student)
-#班级
+#
 classroom = Classroom()
 
 # 添加学生
