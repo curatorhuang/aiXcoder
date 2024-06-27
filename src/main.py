@@ -5,9 +5,8 @@ from classroom import Classroom
 classroom1 = Classroom("Class A", "Mr. Smith")
 
 # 添加学生到班级
-classroom1.add_student("Alice", "Female", 15)
-classroom1.add_student("Bob", "Male", 16)
-classroom1.add_student("Eve", "Female", 15)
+classroom1.add_student("张三", "男", 15)
+classroom1.add_student("李四", "女", 16)
 
 # 输出班级信息
 print(f"Class Name: {classroom1.class_name}")
