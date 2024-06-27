@@ -13,7 +13,6 @@ class Classroom:
         for student in self.students:
             print(student)
 
-# 创建班级实例
 classroom = Classroom()
 
 # 添加学生
