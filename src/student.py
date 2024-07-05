@@ -2,11 +2,9 @@
 
 
 class Student:
-    def __init__(self, name, gender, age, city):
+    def __init__(self, name, gender, age):
         self.name = name
         self.gender = gender
         self.age = age
-        self.city = city
-
 
 

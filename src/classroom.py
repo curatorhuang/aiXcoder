@@ -8,8 +8,8 @@ class Classroom:
         self.teacher_name = teacher_name
         self.students = students  # students是一个包含Student对象的列表
 
-    def add_student(self, name, gender, age, city):
-        student = Student(name, gender, age, city)
+    def add_student(self, name, gender, age):
+        student = Student(name, gender, age)
         self.students.append(student)
 
     def num_students(self):
@@ -17,5 +17,5 @@ class Classroom:
 
     def list_students(self):
         for student in self.students:
-            print(f"Name: {student.name}, Gender: {student.gender}, Age: {student.age}, City: {student.city}")
+            print(f"Name: {student.name}, Gender: {student.gender}, Age: {student.age}")
 
