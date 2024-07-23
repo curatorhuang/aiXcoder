@@ -15,7 +15,7 @@ def read_file(file_path):
     except FileNotFoundError:
         return "文件未找到"
     except Exception as e:
-        return f"读取文件时出错: {e}"
+        return f"读取文件时出错: {e}
 
 
 def write_file(file_path, content):
